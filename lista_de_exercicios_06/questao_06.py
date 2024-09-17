@@ -1,14 +1,14 @@
 """ Seja criativo ao desenvolver este programa.
 
-*Crie uma lista de convidados para um jantar em sua casa, com pelo menos 5 celebridades.
+*Crie uma lista de convidados para um jantar em sua casa, com pelo menos 5 celebridades. OK
 
-*Envie um convite para cada uma dessas pessoas. Com a mesma mensagem e nome personalizado.
+*Envie um convite para cada uma dessas pessoas. Com a mesma mensagem e nome personalizado. OK
 
-*Sabendo que uma dessas pessoas não poderá ir ao seu jantar, você deverá enviar novos convites. Imprima o nome das pessoas que não poderão comparecer.
+*Sabendo que uma dessas pessoas não poderá ir ao seu jantar, você deverá enviar novos convites. Imprima o nome das pessoas que não poderão comparecer. OK
 
-*Modifique sua lista, substitua os desistentes por novos convidados.
+*Modifique sua lista, substitua os desistentes por novos convidados. OK
 
-*Exiba um novo convite para cada pessoa que continua presente em sua lista.
+*Exiba um novo convite para cada pessoa que continua presente em sua lista. OK
  """
 
 from sys import argv
@@ -28,13 +28,13 @@ def enviarConvites(listaDeConvidados):
         listaDeConvidados[entrada] = True
 
 def confirmaPresenca(listaDeConvidados):
-    listaAuxiliar = listaDeConvidados
+    listaAuxiliar = listaDeConvidados #Variavel auxiliar para permitir deletar itens da lista nas iterações do loop 'for'
     for key in listaAuxiliar:
         entrada = input(f'Voce {key} esta convidado para o evento, deseja participar? Responda com "Sim" ou "Não": ')   
         listaDeConvidados[key] = True if entrada == 'Sim' else False
         if not(entrada == 'Sim'):
             del listaDeConvidados[key]
-            entrada = input(f'Adicione uma pessoa para substituir {key}: ')
+            entrada = input(f'{key} não podera comparecer, digite outro convidado para substitui-lo: ')
             listaDeConvidados[entrada] = True
 
 if __name__ == '__main__':
@@ -47,10 +47,9 @@ if __name__ == '__main__':
 
 
 """ # Creating a hash map (dictionary)
-hash_map = {}
-
 https://www.geeksforgeeks.org/hash-map-in-python/
 
+hash_map = {}
 # Adding key-value pairs
 hash_map["name"] = "Alice"
 hash_map["age"] = 25

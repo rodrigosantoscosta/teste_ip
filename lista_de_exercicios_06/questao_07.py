@@ -21,9 +21,9 @@ def cadastrarUsuario(lista):
         usuario = Usuario(nome, idade, email)
         lista.append(usuario)
 
-def exibirUsuarios(lista):
+""" def exibirUsuarios(lista):
     for i in range(0, len(lista)):
-        print (str(lista[i]))
+        print (str(lista[i])) """
 
 if __name__ == '__main__':
     lista = []
