@@ -21,10 +21,6 @@ espadaValida = verificaArma(ataqueEspada, durabilidadeEspada)
 arcoValido = verificaArma(ataqueArco, durabilidadeArco)
 lancaValida = verificaArma(ataqueLanca, durabilidadeLanca)
 
-#Verifica qual é a arma mais forte e a mais durável
-armaMaisForte = max(ataqueEspada, ataqueArco, ataqueLanca)
-armaMaisDuravel = max(durabilidadeEspada, durabilidadeArco, durabilidadeLanca)
-
 if espadaValida or arcoValido or lancaValida:
     if espadaValida:
             print('A espada é mais adequada.')       
