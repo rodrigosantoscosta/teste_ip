@@ -3,11 +3,18 @@
 
 
 def ehPrimo(numero):
-
-    if numero > 1:
-        for i in range (2, numero):
+    
+    if numero == 2:
+        return True
+    
+    if numero == 3:
+        return True
+    
+    if numero > 1 :
+        for i in range (1, numero + 1):
             if numero % i == 0:
-                return False
+                if numero > i != numero and i != 1:
+                    return False
             
             else:
                 return True
@@ -15,7 +22,7 @@ def ehPrimo(numero):
         False
 
 if __name__ == '__main__':
-    numero = int(input('Digite um numero para verificar se é primo'))
+    numero = int(input('Digite um numero para verificar se é primo: '))
 
     if ehPrimo(numero):
         print('É primo')
