@@ -1,0 +1,4 @@
+-Vetores 
+
+- Arranjos unidimensionais
+- Tipo homogeneo de dados
