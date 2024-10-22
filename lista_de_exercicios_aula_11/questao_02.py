@@ -15,7 +15,7 @@ for i in range(5):
 
 mediaDaTurma = somaDasNotas / 5
 
-print(f'Média da turma: {mediaDaTurma:,.1f}')
+print(f'Média da turma: {mediaDaTurma:,.1f}\n')
 
 notasAcimaDaMedia = 0
 

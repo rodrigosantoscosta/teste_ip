@@ -3,7 +3,6 @@
 # depois escrever a mensagem ACHEI, se o nome estiver entre os 5 nomes lidos anteriormente
 # (guardados no vetor), ou NÃO ACHEI caso contrário.
 
-
 listaDeTimes = []
 
 for i in range(5):
