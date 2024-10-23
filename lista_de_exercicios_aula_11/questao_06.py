@@ -5,13 +5,23 @@
 vetor = []
 
 for i in range(20):
-    valor = int(input(f'Digite o elemento nº{i} do vetor: '))
+    valor = int(input(f'Digite o elemento nº {i} do vetor: '))
+    vetor.append(valor)
+
+print(f'Vetor: {vetor}\n')
 
 busca = int(input('Digite o valor a ser buscado no vetor: '))
+achei = False
 
-for i in range(20):
-    indice = i 
+for i in range(len(vetor)):  
     if vetor[i] == busca:
-        while(vetor[i] != busca):
-            valor = int(input('Esse valor existe no vetor, tente um outro valor pra substituir na busca.'))
+        print(f'O numero {busca} está no vetor.')
+        vetor.remove(busca)
+        achei = True
+        
+        break
 
+if not achei:
+    print(f'O numero {busca} não está no vetor')
+
+print(f'Novo vetor: {vetor}')
