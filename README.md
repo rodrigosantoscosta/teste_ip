@@ -1,2 +1,2 @@
 # teste_ip
-Testando o git com vscode
+Exercicios da disciplina de Introduçção a Programação utilizando a linguagem Python
