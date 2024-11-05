@@ -1,2 +1,2 @@
 # teste_ip
-Exercicios da disciplina de Introduçção a Programação utilizando a linguagem Python
+Exercicios da disciplina de Introdução a Programação utilizando a linguagem Python
