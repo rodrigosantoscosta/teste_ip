@@ -13,8 +13,8 @@ while status != 4:
     exibir_menu()
     try:
         status = int(input('Digite a opção do menu: '))
-    except:
-        print('Tente novamente com um valor valido')
+    except: 
+        print('Tente novamente com um valor valido.')
     
         
     match status:
@@ -32,4 +32,4 @@ while status != 4:
             status = 4
         
         case _:
-            print('Digite um valor valido para opção do menu')
+            print('Digite um valor valido para opção do menu: ')

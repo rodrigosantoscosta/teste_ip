@@ -35,6 +35,3 @@ print('Matriz B:\n')
 
 for linha in range(10):
     print(B[linha])
-
-
-
